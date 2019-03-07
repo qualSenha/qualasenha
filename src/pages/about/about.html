@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar transparent>
+    <ion-title>
+      <span>Agendamento</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item>
+  <ion-label>Local</ion-label>
+    <ion-select [(ngModel)]="a">
+      <ion-option value="campusLiberdade">Liberdade</ion-option>
+      <ion-option value="campusBrigadeiro">Brigadeiro</ion-option>
+      <ion-option value="campusMorumbi">Morumbi</ion-option>
+      <ion-option value="campusSantoAmaro">Santo Amaro</ion-option>
+    </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Solicitação</ion-label>
+    <ion-select [(ngModel)]="a">
+      <ion-option value="financeiro">Financeiro</ion-option>
+      <ion-option value="matricula">Matricula</ion-option>
+      <ion-option value="DP/ADAP">Disciplinas, Eletivas, DP e ADAP</ion-option>
+      <ion-option value="estagio">Estagio</ion-option>
+      <ion-option value="outros">Outros Serviços</ion-option>
+    </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Mes</ion-label>
+  <ion-datetime displayFormat="MMM" [(ngModel)]="a"></ion-datetime>
+</ion-item>
+<ion-item>
+	<ion-label>Dia</ion-label>
+	<ion-datetime displayFormat="DD" [(ngModel)]="a"></ion-datetime>
+</ion-item>
+
+</ion-content>

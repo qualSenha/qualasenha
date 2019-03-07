@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar transparent>
+    <ion-title><span>Home</span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="">
+<ion-card color="roxo">
+  <ion-card-content>
+  <ion-list style="font-size: 30px; text-align: center">
+    Histórico de Senhas Chamadas<br>
+
+  </ion-list>
+</ion-card-content>
+</ion-card>
+
+
+<ion-card>
+  <ion-card-content style="text-align: center; font-size: 30px">
+    1
+  </ion-card-content>
+
+</ion-card>
+<ion-card>
+  <ion-card-content style="text-align: center; font-size: 30px">
+    2
+  </ion-card-content>
+
+</ion-card>
+<ion-card>
+  <ion-card-content style="text-align: center; font-size: 30px">
+    3
+  </ion-card-content>
+
+</ion-card>
+<ion-card>
+  <ion-card-content style="text-align: center; font-size: 30px">
+    4
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card color="roxo">
+  <ion-card-content style="text-align: center; font-size: 30px">
+    <ion-list>
+      Sua Senha:
+    <ion-item-sliding>
+
+      <ion-item>
+
+        <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> 
+          <button ion-button large full color="light" onclick="alert('Senha Gerada Com Sucesso')">Gerar Senha
+          </button>
+          <button ion-button large full color="light" (click)="openAgendar()">Agendar</button>
+        </h1>
+      </ion-item>
+
+    </ion-item-sliding>
+  </ion-list>
+  </ion-card-content>
+
+</ion-card>
+</ion-content>
