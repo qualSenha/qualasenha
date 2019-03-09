@@ -43,15 +43,15 @@
 <ion-card color="roxo">
   <ion-card-content style="text-align: center; font-size: 30px">
     <ion-list>
-      Sua Senha:
     <ion-item-sliding>
 
       <ion-item>
 
         <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> 
-          <button ion-button large full color="light" onclick="alert('Senha Gerada Com Sucesso')">Gerar Senha
+          <button ion-button large full color="light" onclick="alert('Senha Gerada Com Sucesso')" (click)="openGerar()">Gerar Senha
           </button>
-          <button ion-button large full color="light" (click)="openAgendar()">Agendar</button>
+          <button ion-button large full color="light" (click)="openAgendar()">Agendar
+          </button>
         </h1>
       </ion-item>
 

@@ -27,12 +27,12 @@
     </ion-select>
 </ion-item>
 <ion-item>
-  <ion-label>Mes</ion-label>
-  <ion-datetime displayFormat="MMM" [(ngModel)]="a"></ion-datetime>
+  <ion-label>Dia</ion-label>
+  <ion-datetime displayFormat="DD" [(ngModel)]="a"></ion-datetime>
 </ion-item>
 <ion-item>
-	<ion-label>Dia</ion-label>
-	<ion-datetime displayFormat="DD" [(ngModel)]="a"></ion-datetime>
+  <ion-label>Hora</ion-label>
+  <ion-datetime displayFormat="HH" [(ngModel)]="a"></ion-datetime>
 </ion-item>
-
+<button ion-button large full color="light" (click)="openAgendar()">Agendar</button>
 </ion-content>
