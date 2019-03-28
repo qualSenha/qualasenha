@@ -60,6 +60,30 @@
   </ion-card-content>
 </ion-card>
 
+  <ion-card color="roxo">
+    <ion-card-content style="text-align: center; font-size: 30px">
+      <ion-list>
+        Opções
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content style="text-align: left; font-size: 30px">
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Notificar Quando faltar</ion-label>
+          <ion-select [(ngModel)]="a">
+            <ion-option value="1Senha">1 Senha</ion-option>
+            <ion-option value="2Senhas">2 Senhas</ion-option>
+            <ion-option value="5Senhas">5 Senhas</ion-option>
+            <ion-option value="10Senhas">10 Senhas</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-card-content>
+  </ion-card>
+
 <ion-card color="roxo">
   <ion-card-content style="text-align: center; font-size: 30px">
     <ion-list>
