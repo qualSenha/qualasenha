@@ -27994,7 +27994,12 @@ ion-navbar ion-title span {
   color: white !important;
 }
 
-ion-content {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#4682B4));
-  background: linear-gradient(black, #4682B4);
+page-home ion-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
+  background: linear-gradient(#FFFFFF, #FFFFFF);
+}
+
+page-login ion-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#424242), to(#424242));
+  background: linear-gradient(#424242, #424242);
 }

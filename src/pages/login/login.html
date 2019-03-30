@@ -1,48 +1,33 @@
-<ion-header>
-  <ion-navbar transparent>
-    <ion-title><span>login</span></ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <ion-card color="roxo">
-   	<ion-card-content>
-   		<ion-list style="font-size: 30px; text-align: center">
-      			Login<br>
-    	</ion-list>
-    </ion-card-content>
-  </ion-card>
+
+<ion-card>
+  <img src="assets/imgs/kaiquedarodela.png"/>
+</ion-card>
 
   <ion-card>
-	<ion-card-content style="text-align: left; font-size: 30px">
-	  <ion-item>
-	    <ion-label stacked>R.A.</ion-label>
-	   	<ion-input type="text"></ion-input>
+	  <ion-item style="background-color: #424242">
+	    <ion-label  style="color: #FFFFFF" stacked>R.A</ion-label>
+	   	<ion-input  type="text"></ion-input>
 	  </ion-item>
-	</ion-card-content>
   </ion-card>
 
   <ion-card>
-  	<ion-card-content style="text-align: left; font-size: 30px">
-	  <ion-item>
-	    <ion-label stacked>Senha</ion-label>	
+	  <ion-item style="background-color: #424242">
+	    <ion-label style="color: #FFFFFF" stacked>Senha</ion-label>	
 	    <ion-input type="password"></ion-input>
 	  </ion-item>
-	</ion-card-content>
   </ion-card>
 
-   <ion-card color="roxo">
     <ion-card-content style="text-align: center; font-size: 30px">
       <ion-list>
         <ion-item-sliding>
-          <ion-item>
-            <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> 
-              <button ion-button large full color="light" >ENTRAR</button>
+          <ion-item style="background-color: #424242">
+            <h1> 
+              <button style="background-color: #FF0000" ion-button large full (click)="openLogin()" >ENTRAR</button>
             </h1>
           </ion-item>
         </ion-item-sliding>
       </ion-list>
     </ion-card-content>
-  </ion-card>
 
 </ion-content>
