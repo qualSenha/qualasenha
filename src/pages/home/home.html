@@ -5,27 +5,36 @@
 </ion-header>
 
 <ion-content>
-<ion-card style=" background-color: #424242">
-  <ion-card-content>
-  <ion-list style="font-size: 30px; text-align: center">
+
+  <ion-card-content style=" background-color: #424242">
+  <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">
     Senhas Chamadas<br>
   </ion-list>
 </ion-card-content>
+
+
+<ion-card>
+  <ion-card-content style="font-size: 30px">
+  <ion-row>
+    <ion-col col-4 style="text-align: center;">Senha</ion-col>
+    <ion-col style="text-align: center;">| </ion-col>
+    <ion-col style="text-align: center;">Guiche</ion-col>
+  </ion-row>
+  </ion-card-content>
 </ion-card>
 
 
 <ion-card>
-  <ion-card-content style="text-align: center; font-size: 30px">
-    1
+  <ion-card-content style="font-size: 30px">
+  <ion-row>
+    <ion-col col-4 style="text-align: center;">1</ion-col>
+    <ion-col style="text-align: center;">| </ion-col>
+    <ion-col style="text-align: center;">02</ion-col>
+  </ion-row>
   </ion-card-content>
-
 </ion-card>
-<ion-card>
-  <ion-card-content style="text-align: center; font-size: 30px">
-    2
-  </ion-card-content>
 
-</ion-card>
+
 <ion-card>
   <ion-card-content style="text-align: center; font-size: 30px">
     3
@@ -39,22 +48,12 @@
 
 </ion-card>
 
-<ion-card color="roxo">
-  <ion-card-content style="text-align: center; font-size: 30px">
-    <ion-list>
-    <ion-item-sliding>
 
-      <ion-item>
 
-        <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> 
-          <button ion-button large full color="light" (click)="showAlert();openGerar()">Gerar Senha
+  <ion-card-content>
+          <button ion-button block large  (click)="showAlert();openGerar()" color="danger" round outline>Gerar Senha
           </button>
-        </h1>
-      </ion-item>
+</ion-card-content>
 
-    </ion-item-sliding>
-  </ion-list>
-  </ion-card-content>
 
-</ion-card>
 </ion-content>

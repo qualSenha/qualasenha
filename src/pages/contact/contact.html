@@ -1,17 +1,17 @@
 <ion-header>
-  <ion-navbar transparent>
+  <ion-navbar transparent style="background-color: #FF0000">
     <ion-title><span>Configurações</span></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding style="">
-  <ion-card color="roxo">
-    <ion-card-content>
-      <ion-list style="font-size: 30px; text-align: center">
+<ion-content>
+
+    <ion-card-content style=" background-color: #424242">
+      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">
         Dados Pessoais
       </ion-list>
     </ion-card-content>
-  </ion-card>
+
 
   <ion-card>
     <ion-card-content style="text-align: left; font-size: 30px">
@@ -58,18 +58,8 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card color="roxo">
-    <ion-card-content style="text-align: center; font-size: 30px">
-      <ion-list>
-        <ion-item-sliding>
-          <ion-item>
-            <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> 
-              <button ion-button large full color="light" onclick="alert('Configurações Atulizadas Com Sucesso')" >Atualizar</button>
-            </h1>
-          </ion-item>
-        </ion-item-sliding>
-      </ion-list>
-    </ion-card-content>
-  </ion-card>
+  <ion-card-content>
+    <button ion-button block large color="danger" onclick="alert('Configurações Atulizadas Com Sucesso')"outline round >Atualizar</button>
+  </ion-card-content>
 
 </ion-content>

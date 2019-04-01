@@ -90,7 +90,7 @@ var LoginPageModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(153);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -115,14 +115,14 @@ var LoginPage = /** @class */ (function () {
         this.navParams = navParams;
     }
     LoginPage.prototype.openLogin = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__tabs_tabs__["a" /* TabsPage */]);
     };
     LoginPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LoginPage');
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\login\login.html"*/'<ion-content padding>\n\n\n\n<ion-card>\n\n  <img src="assets/imgs/kaiquedarodela.png"/>\n\n</ion-card>\n\n\n\n  <ion-card>\n\n	  <ion-item style="background-color: #424242">\n\n	    <ion-label  style="color: #FFFFFF" stacked>R.A</ion-label>\n\n	   	<ion-input  type="text"></ion-input>\n\n	  </ion-item>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n	  <ion-item style="background-color: #424242">\n\n	    <ion-label style="color: #FFFFFF" stacked>Senha</ion-label>	\n\n	    <ion-input type="password"></ion-input>\n\n	  </ion-item>\n\n  </ion-card>\n\n\n\n    <ion-card-content style="text-align: center; font-size: 30px">\n\n      <ion-list>\n\n        <ion-item-sliding>\n\n          <ion-item style="background-color: #424242">\n\n            <h1> \n\n              <button style="background-color: #FF0000" ion-button large full (click)="openLogin()" >ENTRAR</button>\n\n            </h1>\n\n          </ion-item>\n\n        </ion-item-sliding>\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\login\login.html"*/'<ion-content padding>\n\n\n\n\n\n  <img src="assets/imgs/logo.png"/>\n\n\n\n\n\n  <ion-card>\n\n	  <ion-item style="background-color: #696969">\n\n	    <ion-label  style="color: #9C9C9C" stacked>R.A</ion-label>\n\n	   	<ion-input  style="color:#FFFFFF" type="text"></ion-input>\n\n	  </ion-item>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n	  <ion-item style="background-color: #696969">\n\n	    <ion-label style="color: #9C9C9C" stacked>Senha</ion-label>	\n\n	    <ion-input style="color:#FFFFFF " type="password"></ion-input>\n\n	  </ion-item>\n\n  </ion-card>\n\n\n\n    <ion-card-content style="text-align: center; font-size: 30px">\n\n      <ion-list>\n\n        <ion-item-sliding>\n\n          <ion-item style="background-color: #424242">\n\n            <h1> \n\n              <button style="background-color: #FF0000" ion-button large full (click)="openLogin()" round>ENTRAR</button>\n\n            </h1>\n\n          </ion-item>\n\n        </ion-item-sliding>\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);
@@ -133,7 +133,47 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 153:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(99);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TabsPage = /** @class */ (function () {
+    function TabsPage() {
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
+    }
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\tabs\tabs.html"*/'<ion-tabs color="dark">\n\n  <ion-tab [root]="tab1Root" tabTitle="Senhas" tabIcon="time" color="dark" ></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Agendar" tabIcon="calendar"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Configurações" tabIcon="settings"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\tabs\tabs.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 154:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -160,7 +200,7 @@ var AboutPage = /** @class */ (function () {
     };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar transparent>\n\n    <ion-title><span>Agendamento</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card color="roxo">\n\n    <ion-card-content>\n\n      <ion-list style="font-size: 30px; text-align: center">\n\n      Dados Para Agendamento<br>\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Local</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="campusLiberdade">Liberdade</ion-option>\n\n          <ion-option value="campusBrigadeiro">Brigadeiro</ion-option>\n\n          <ion-option value="campusMorumbi">Morumbi</ion-option>\n\n          <ion-option value="campusSantoAmaro">Santo Amaro</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>  \n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Solicitação</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="financeiro">Financeiro</ion-option>\n\n          <ion-option value="matricula">Matricula</ion-option>\n\n          <ion-option value="DP/ADAP">Disciplinas, Eletivas, DP e ADAP</ion-option>\n\n          <ion-option value="estagio">Estagio</ion-option>\n\n          <ion-option value="outros">Outros Serviços</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Dia</ion-label>\n\n      <ion-datetime displayFormat="DD" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Hora</ion-label>\n\n      <ion-datetime displayFormat="HH" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item> \n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n  <ion-card color="roxo">\n\n    <ion-card-content style="text-align: center; font-size: 30px">\n\n      <ion-list>\n\n        Opções\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item-sliding>\n\n        <ion-item>\n\n          <ion-label>Notificar Quando faltar</ion-label>\n\n          <ion-select [(ngModel)]="a">\n\n            <ion-option value="1Senha">1 Senha</ion-option>\n\n            <ion-option value="2Senhas">2 Senhas</ion-option>\n\n            <ion-option value="5Senhas">5 Senhas</ion-option>\n\n            <ion-option value="10Senhas">10 Senhas</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n\n      </ion-item-sliding>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n<ion-card color="roxo">\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    <ion-list>\n\n      <ion-item-sliding>\n\n        <ion-item>\n\n          <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> \n\n            <button ion-button large full color="light" (click)="openAgendar()">Agendar</button>\n\n          </h1>\n\n        </ion-item>\n\n      </ion-item-sliding>\n\n    </ion-list>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Agendamento</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content >\n\n\n\n    <ion-card-content style=" background-color: #424242">\n\n      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n      Dados Para Agendamento<br>\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Local</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="campusLiberdade">Liberdade</ion-option>\n\n          <ion-option value="campusBrigadeiro">Brigadeiro</ion-option>\n\n          <ion-option value="campusMorumbi">Morumbi</ion-option>\n\n          <ion-option value="campusSantoAmaro">Santo Amaro</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>  \n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Solicitação</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="financeiro">Financeiro</ion-option>\n\n          <ion-option value="matricula">Matricula</ion-option>\n\n          <ion-option value="DP/ADAP">Disciplinas, Eletivas, DP e ADAP</ion-option>\n\n          <ion-option value="estagio">Estagio</ion-option>\n\n          <ion-option value="outros">Outros Serviços</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Dia</ion-label>\n\n      <ion-datetime displayFormat="DD" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Hora</ion-label>\n\n      <ion-datetime displayFormat="HH" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item> \n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n\n\n    <ion-card-content style=" background-color: #424242;text-align: center; font-size: 30px">\n\n      <ion-list style="color: #FFFFFF">\n\n        Opções\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item-sliding>\n\n        <ion-item>\n\n          <ion-label>Notificar Quando faltar</ion-label>\n\n          <ion-select [(ngModel)]="a">\n\n            <ion-option value="1Senha">1 Senha</ion-option>\n\n            <ion-option value="2Senhas">2 Senhas</ion-option>\n\n            <ion-option value="5Senhas">5 Senhas</ion-option>\n\n            <ion-option value="10Senhas">10 Senhas</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n\n      </ion-item-sliding>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n\n\n  <ion-card-content>\n\n    <button ion-button block large color="danger" (click)="openAgendar()" round outline>Agendar</button>\n\n  </ion-card-content>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], AboutPage);
@@ -171,7 +211,7 @@ var AboutPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 197:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -195,7 +235,7 @@ var ContactPage = /** @class */ (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar transparent>\n\n    <ion-title><span>Configurações</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding style="">\n\n  <ion-card color="roxo">\n\n    <ion-card-content>\n\n      <ion-list style="font-size: 30px; text-align: center">\n\n        Dados Pessoais\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n       <ion-label>Nome Completo:</ion-label>    \n\n       <ion-input type="text"></ion-input>     \n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>CPF:</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  \n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>E-mail</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>Data de Nascimento:</ion-label>\n\n        <ion-input type="date"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n    <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>Telefone:</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card color="roxo">\n\n    <ion-card-content style="text-align: center; font-size: 30px">\n\n      <ion-list>\n\n        <ion-item-sliding>\n\n          <ion-item>\n\n            <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> \n\n              <button ion-button large full color="light" onclick="alert(\'Configurações Atulizadas Com Sucesso\')" >Atualizar</button>\n\n            </h1>\n\n          </ion-item>\n\n        </ion-item-sliding>\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Configurações</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <ion-card-content style=" background-color: #424242">\n\n      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n        Dados Pessoais\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n       <ion-label>Nome Completo:</ion-label>    \n\n       <ion-input type="text"></ion-input>     \n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>CPF:</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  \n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>E-mail</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>Data de Nascimento:</ion-label>\n\n        <ion-input type="date"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n    <ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item>\n\n        <ion-label>Telefone:</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card-content>\n\n    <button ion-button block large color="danger" onclick="alert(\'Configurações Atulizadas Com Sucesso\')"outline round >Atualizar</button>\n\n  </ion-card-content>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], ContactPage);
@@ -206,13 +246,13 @@ var ContactPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(222);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -220,7 +260,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 221:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -228,14 +268,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(264);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login_module__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login_module__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -273,7 +313,7 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_10__pages_login_login_module__["LoginPageModule"]
+                __WEBPACK_IMPORTED_MODULE_8__pages_login_login_module__["LoginPageModule"]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
@@ -284,8 +324,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
@@ -297,15 +337,15 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 264:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(152);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -343,47 +383,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 272:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(50);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var TabsPage = /** @class */ (function () {
-    function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
-    }
-    TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\tabs\tabs.html"*/'<ion-tabs color="roxo">\n\n  <ion-tab [root]="tab1Root" tabTitle="Senhas" tabIcon="time"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Agendar" tabIcon="calendar"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Configurações" tabIcon="settings"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\tabs\tabs.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], TabsPage);
-    return TabsPage;
-}());
-
-//# sourceMappingURL=tabs.js.map
-
-/***/ }),
-
-/***/ 50:
+/***/ 99:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -420,7 +420,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Home</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n<ion-card style=" background-color: #424242">\n\n  <ion-card-content>\n\n  <ion-list style="font-size: 30px; text-align: center">\n\n    Senhas Chamadas<br>\n\n  </ion-list>\n\n</ion-card-content>\n\n</ion-card>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    1\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n<ion-card>\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    2\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n<ion-card>\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    3\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n<ion-card>\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    4\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n\n\n<ion-card color="roxo">\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    <ion-list>\n\n    <ion-item-sliding>\n\n\n\n      <ion-item>\n\n\n\n        <h1 style="color: #4682B4; font-size: 30px; text-align: center;"> \n\n          <button ion-button large full color="light" (click)="showAlert();openGerar()">Gerar Senha\n\n          </button>\n\n        </h1>\n\n      </ion-item>\n\n\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Home</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n  <ion-card-content style=" background-color: #424242">\n\n  <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n    Senhas Chamadas<br>\n\n  </ion-list>\n\n</ion-card-content>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">Senha</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">Guiche</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">1</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">02</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    3\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n<ion-card>\n\n  <ion-card-content style="text-align: center; font-size: 30px">\n\n    4\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n\n\n\n\n\n\n  <ion-card-content>\n\n          <button ion-button block large  (click)="showAlert();openGerar()" color="danger" round outline>Gerar Senha\n\n          </button>\n\n</ion-card-content>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
@@ -432,5 +432,5 @@ var HomePage = /** @class */ (function () {
 
 /***/ })
 
-},[198]);
+},[199]);
 //# sourceMappingURL=main.js.map
