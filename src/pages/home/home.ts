@@ -20,7 +20,7 @@ export class HomePage {
 	showAlert() {
     const alert = this.alertCtrl.create({
       title: 'Sucesso!',
-      subTitle: 'Senha gerada com sucesso!!!',
+      subTitle: 'Senha gerada com sucesso!',
       buttons: ['OK'],
     });
     alert.present();
