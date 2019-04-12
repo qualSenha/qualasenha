@@ -12,6 +12,9 @@ import { LoginPageModule } from "../pages/login/login.module";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ServidorProvider } from '../providers/servidor/servidor';
+
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -25,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    LoginPageModule 
+    LoginPageModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ServidorProvider
   ]
 })
 export class AppModule {}

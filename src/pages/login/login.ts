@@ -1,14 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { ServidorProvider } from './../../providers/servidor/servidor';
 import { TabsPage } from "../tabs/tabs";
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -16,16 +9,34 @@ import { TabsPage } from "../tabs/tabs";
   templateUrl: 'login.html',
 })
 export class LoginPage {
+  model:User;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, public navParams: NavParams,
+    private toast: ToastController, private servidorProvider: ServidorProvider) {
+    
+      this.model = new User();
+      this.model.ra = '';
+      this.model.password = '';
   }
 
-  openLogin() {
-		this.navCtrl.push(TabsPage);
+  Login() {
+    this.servidorProvider.login(this.model.ra, this.model.password)
+      .then((result: any) => {
+                this.toast.create({ message: 'Usuário logado com sucesso.', position: 'botton', duration: 3000 }).present();
+                this.navCtrl.push(TabsPage);
+      })
+      .catch((error: any) => {
+        this.toast.create({ message: 'Erro ao efetuar login. Erro: ' + error.error, position: 'botton', duration: 3000 }).present();
+        });
+        
 	}
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+ 
   }
 
+  export class User {
+  ra: string;
+  password: string;
 }
+
+
