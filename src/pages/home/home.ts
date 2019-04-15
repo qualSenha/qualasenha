@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AboutPage } from '../about/about';
-import { HomeSgPage} from '../home-sg/home-sg';
-import { LoginPage } from '../login/login';
 import { AlertController } from 'ionic-angular'
-
+import { HomeSgPage } from '../home-sg/home-sg';
 
 @Component({
 	selector: 'page-home',
@@ -27,7 +24,7 @@ export class HomePage {
   }
 
   	openGerar() {
-		this.navCtrl.push('HomeSgPage');
+		this.navCtrl.setRoot(HomeSgPage);
 	}	
 
 

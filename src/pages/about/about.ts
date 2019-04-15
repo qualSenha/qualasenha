@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HomePage } from '../home/home';
 import { HomeSgPage } from '../home-sg/home-sg';
 
 @Component({
@@ -13,7 +12,7 @@ export class AboutPage {
 	constructor(public navCtrl: NavController) { }
 
 	openAgendar() {
-		this.navCtrl.push('HomeSgPage');
-	}
+		this.navCtrl.setRoot(HomeSgPage);
+		}
 
 }

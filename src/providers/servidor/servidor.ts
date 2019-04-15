@@ -1,27 +1,31 @@
-import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
-import 'rxjs/add/operator/map';
+import { Http } from '@angular/http'
+import { map } from 'rxjs/operators';
 
+/*
+  Generated class for the ServidorProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
 @Injectable()
 export class ServidorProvider {
-	private url = ''
 
-  constructor(public http: Http) { }
+  url: string = "http://localhost/usuario/";
 
-  login(ra: string, password: string) {
-    return new Promise((resolve, reject) => {
-      var data = {
-        ra: ra,
-        password: password
-      };
- 
-      this.http.post(this.url + 'login', data)
-        .subscribe((result: any) => {
-          resolve(result.json());
-        },
-        (error) => {
-          reject(error.json());
-        });
-    });
+  constructor(public http: Http) {
+    console.log('Hello ServidorProvider Provider');
   }
- }
+
+  urlGet(){
+    return this.url;
+  }
+
+
+
+  getPegar(){
+      return this.http.get(this.url+'dados.php').pipe(map(res => res.json()));
+      
+  }
+
+}

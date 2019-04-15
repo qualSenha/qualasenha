@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
     <ion-card-content style=" background-color: #424242">
       <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">
@@ -13,37 +13,32 @@
     </ion-card-content>
 
     <ion-card-content style="text-align: left; font-size: 30px">
-      <ion-item>
-       <ion-label>Nome Completo:</ion-label>    
-       <ion-input type="text"></ion-input>     
+      <ion-item *ngFor="let aluno of alunos">
+       <ion-label>Nome Completo: {{ aluno.nome }}</ion-label> 
       </ion-item>
     </ion-card-content>
   
     <ion-card-content style="text-align: left; font-size: 30px">
-      <ion-item>
-        <ion-label>CPF:</ion-label>
-        <ion-input type="text"></ion-input>
+      <ion-item *ngFor="let aluno of alunos">
+        <ion-label>CPF: {{ aluno.cpf }}</ion-label>
       </ion-item>
     </ion-card-content>
   
     <ion-card-content style="text-align: left; font-size: 30px">
-      <ion-item>
-        <ion-label>E-mail</ion-label>
-        <ion-input type="text"></ion-input>
+      <ion-item *ngFor="let aluno of alunos">
+        <ion-label>E-mail: {{ aluno.email }}</ion-label>
       </ion-item>
     </ion-card-content>
   
     <ion-card-content style="text-align: left; font-size: 30px">
-      <ion-item>
-        <ion-label>Data de Nascimento:</ion-label>
-        <ion-input type="date"></ion-input>
+      <ion-item *ngFor="let aluno of alunos">
+        <ion-label>Data de Nascimento: {{ aluno.data }}</ion-label>
       </ion-item>
     </ion-card-content>
  
     <ion-card-content style="text-align: left; font-size: 30px">
-      <ion-item>
-        <ion-label>Telefone:</ion-label>
-        <ion-input type="text"></ion-input>
+      <ion-item *ngFor="let aluno of alunos">
+        <ion-label>Telefone: {{ aluno.telefone }}</ion-label>
       </ion-item>
     </ion-card-content> 
 

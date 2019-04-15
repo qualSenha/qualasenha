@@ -1,7 +1,16 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
-import { ServidorProvider } from './../../providers/servidor/servidor';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { TabsPage } from "../tabs/tabs";
+import { map } from 'rxjs/operators';
+import { Http } from '@angular/http';
+import { ServidorProvider } from '../../providers/servidor/servidor';
+
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
 @IonicPage()
 @Component({
@@ -9,34 +18,55 @@ import { TabsPage } from "../tabs/tabs";
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  model:User;
+
+  ra: string;
+  senha: string;
 
   constructor(
-    public navCtrl: NavController, public navParams: NavParams,
-    private toast: ToastController, private servidorProvider: ServidorProvider) {
-    
-      this.model = new User();
-      this.model.ra = '';
-      this.model.password = '';
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public alertCtrl: AlertController,
+    public servidor: ServidorProvider,
+    public http: Http ) {
   }
 
   Login() {
-    this.servidorProvider.login(this.model.ra, this.model.password)
-      .then((result: any) => {
-                this.toast.create({ message: 'Usuário logado com sucesso.', position: 'botton', duration: 3000 }).present();
-                this.navCtrl.push(TabsPage);
+		if(this.ra == undefined || this.senha == undefined){
+      let alert = this.alertCtrl.create({
+        title:"Atenção",
+        message:"Preencha todos os dados",
+        buttons:['OK']
       })
-      .catch((error: any) => {
-        this.toast.create({ message: 'Erro ao efetuar login. Erro: ' + error.error, position: 'botton', duration: 3000 }).present();
-        });
-        
-	}
- 
+      alert.present();
+    }else{
+
+      this.http.get(this.servidor.urlGet()+'login.php?ra='+this.ra+'&senha='+this.senha).pipe(map( res => res.json()))
+      .subscribe(
+        dados =>{
+          if(dados.msg.logado == "sim"){
+            
+            this.navCtrl.setRoot(TabsPage);
+          }else{
+            let alert = this.alertCtrl.create({
+              title:"Atenção",
+              message:"Usuario ou senha invalido",
+              buttons: ['OK']
+            })
+            alert.present();
+          }
+
+        }
+      )
+
+    }
+
   }
 
-  export class User {
-  ra: string;
-  password: string;
+
+  
+  
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad LoginPage');
+  }
+
 }
-
-
