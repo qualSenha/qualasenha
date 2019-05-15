@@ -1,32 +1,40 @@
 <ion-content padding>
 
 
-  <img src="assets/imgs/logo.png"/>
+  <img src="assets/imgs/logos.png"/>
 
 
   <ion-card>
-	  <ion-item style="background-color: #696969">
-	    <ion-label  style="color: #9C9C9C" stacked>R.A</ion-label>
-	   	<ion-input  style="color:#FFFFFF"  type="text"[(ngModel)]="ra"></ion-input>
+	  <ion-item style="background-color: #A4A4A4">
+	    <ion-label  style="color: #FFFFFF" stacked>R.A.</ion-label>
+	   	<ion-input  style="color:#000000"  type="text" [(ngModel)]="model.ra"></ion-input>
 	  </ion-item>
   </ion-card>
 
   <ion-card>
-	  <ion-item style="background-color: #696969">
-	    <ion-label style="color: #9C9C9C" stacked>Senha</ion-label>	
-	    <ion-input style="color:#FFFFFF " type="password"[(ngModel)]="senha"></ion-input>
+	  <ion-item style="background-color: #A4A4A4">
+	    <ion-label style="color: #FFFFFF" stacked>Senha</ion-label>	
+	    <ion-input style="color:#000000" type="password" [(ngModel)]="model.senha"></ion-input>
 	  </ion-item>
+  </ion-card>
+
+    <ion-card>
+    <ion-item style="background-color: #A4A4A4" >
+      <ion-label style="color: #FFFFFF">Local de Atendimento</ion-label>
+        <ion-select [(ngModel)]="a">
+          <ion-option value="campusLiberdade">Liberdade</ion-option>
+          <ion-option value="campusBrigadeiro">Brigadeiro</ion-option>
+          <ion-option value="campusMorumbi">Morumbi</ion-option>
+          <ion-option value="campusSantoAmaro">Santo Amaro</ion-option>
+        </ion-select>
+    </ion-item>
   </ion-card>
 
     <ion-card-content style="text-align: center; font-size: 30px">
       <ion-list>
-        <ion-item-sliding>
-          <ion-item style="background-color: #424242">
             <h1> 
-              <button style="background-color: #FF0000" ion-button large full (click)="Login()" round>ENTRAR</button>
+              <button style="background-color: #FF0000" ion-button large full (click)="getUsuario()" round>ENTRAR</button>
             </h1>
-          </ion-item>
-        </ion-item-sliding>
       </ion-list>
     </ion-card-content>
 

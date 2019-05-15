@@ -32,7 +32,7 @@
   
     <ion-card-content style="text-align: left; font-size: 30px">
       <ion-item *ngFor="let aluno of alunos">
-        <ion-label>Data de Nascimento: {{ aluno.data }}</ion-label>
+        <ion-label>Data de Nascimento: {{ aluno.dataNascimento | date: "dd/MM/yyyy" }}</ion-label>
       </ion-item>
     </ion-card-content>
  
@@ -42,8 +42,8 @@
       </ion-item>
     </ion-card-content> 
 
-  <ion-card-content>
+  <!--<ion-card-content>
     <button ion-button block large color="danger" onclick="alert('Configurações Atulizadas Com Sucesso')"outline round >Atualizar</button>
-  </ion-card-content>
+  </ion-card-content>-->
 
 </ion-content>

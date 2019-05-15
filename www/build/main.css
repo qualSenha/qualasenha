@@ -4872,6 +4872,10 @@ textarea::-webkit-input-placeholder {
   padding-left: 2px;
 }
 
+textarea::-moz-placeholder {
+  padding-left: 2px;
+}
+
 textarea::-ms-input-placeholder {
   padding-left: 2px;
 }
@@ -28000,6 +28004,6 @@ page-home ion-content {
 }
 
 page-login ion-content {
-  background: -webkit-gradient(linear, left top, left bottom, from(#424242), to(#424242));
-  background: linear-gradient(#424242, #424242);
+  background: -webkit-gradient(linear, left top, left bottom, from(#D8D8D8), to(#BDBDBD));
+  background: linear-gradient(#D8D8D8, #BDBDBD);
 }

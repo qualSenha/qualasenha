@@ -32,7 +32,6 @@ import { LoginPage } from '../pages/login/login';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule,
     HttpModule
   ],
   bootstrap: [IonicApp],

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { ServidorProvider } from '../../providers/servidor/servidor';
 
 @Component({
@@ -9,27 +9,50 @@ import { ServidorProvider } from '../../providers/servidor/servidor';
 export class ContactPage {
 
   
-  public alunos: any;
+  //public alunos: any;
  
-  
+  model: Usuario;
 
   constructor(
     public navCtrl: NavController,
-    public servidor: ServidorProvider    
+    public navParams: NavParams,
+    public servidor: ServidorProvider  
     ) {
-
-      this.getRetornar();
+      this.model = new Usuario();
+      this.model = navParams.get('model')
+      //this.getRetornar();
       
   }
   
-  getRetornar(){
+  /* getRetornar(){
+    this.servidor.getUsuarios()
+      .then((result: any) => {
+        /* this.model.ra = result[0].ra;
+        this.model.senha = result[0].senha; *./
+        console.log(result)
+        for (var i = 0; i < result.length; i++) {
+          var aluno = result[i];
+          this.alunos.push(aluno);
+        }
+      })
+      .catch((error: any) => {
+        console.log(error)
+      });
+  } */
 
-    this.servidor.getPegar()
-    .subscribe(
-      data => this.alunos = data,
-      err => console.log(err)
-    );
+  ionViewDidEnter () {
+    console.log(this.model)
+    /* this.alunos = [];
+    this.getRetornar(); */
   }
 
 
+}
+
+export class Usuario {
+  ra: any;
+  senha: any;
+  email: any;
+  dtNascimento: any;
+  telefone: any;
 }

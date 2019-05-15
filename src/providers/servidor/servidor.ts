@@ -1,31 +1,31 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http'
+import { Http, Headers, RequestOptions } from '@angular/http'
 import { map } from 'rxjs/operators';
+import { ModuleLoader } from 'ionic-angular/umd/util/module-loader';
 
-/*
-  Generated class for the ServidorProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class ServidorProvider {
 
-  url: string = "http://localhost/usuario/";
+  private url = "http://localhost:8880/";
 
   constructor(public http: Http) {
     console.log('Hello ServidorProvider Provider');
   }
 
-  urlGet(){
-    return this.url;
-  }
-
-
-
-  getPegar(){
-      return this.http.get(this.url+'dados.php').pipe(map(res => res.json()));
-      
+  getUsuario(model) {
+    let body = {"ra": model.ra, "senha": model.senha};
+    let link = this.url + "usuario";
+    return new Promise((resolve,reject) => {
+      this.http.post(link, body)
+      .subscribe(
+        (result: any) => {
+          resolve(result.json());
+        },
+        (error: any) => {
+          reject(error.json());
+        }
+      );
+    });
   }
 
 }
