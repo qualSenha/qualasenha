@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { HomeSgPage } from '../home-sg/home-sg';
 
 @Component({
@@ -9,7 +9,10 @@ import { HomeSgPage } from '../home-sg/home-sg';
 
 export class AboutPage {
 
-	constructor(public navCtrl: NavController) { }
+	constructor(public navCtrl: NavController,
+		public navParams: NavParams) {
+			console.log('gerar', navParams.data)
+		}
 
 	openAgendar() {
 		this.navCtrl.setRoot(HomeSgPage);

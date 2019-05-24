@@ -27,42 +27,119 @@ app.get('/', function (req, res) {
 
 app.get('/usuarios', function (req, res) {
   try {
-    var _dbConnection = dbConnection();
+    var _dbConnection = dbConnection()
     var _callback = function (error, result) {
-      console.log(error)
-      console.log(result)
-      _dbConnection.destroy();
-      res.status(200).json(result);
+      _dbConnection.destroy()
+
+      if(result.length > 0) {
+        res.status(200).json(result)
+      } else {
+        res.send(false)
+      }
     }
     var retornoBuscaSQL = new buscaSQL(_dbConnection, _callback);
     retornoBuscaSQL.getUsuarios();
   } catch (error) {
-    console.log('error ' + error);
     res.status(400).send(error);
   }
-});
+})
 
 app.post('/usuario', function (req, res) {
   try {
     var dados = req.body
 
-    console.log(dados)
-
     var _dbConnection = dbConnection()
 
     var _callback = function (error, result) {
-      _dbConnection.destroy();
-      res.status(200).json(result);
+      console.log(result)
+      _dbConnection.destroy()
+      if(result.length > 0) {
+        res.status(200).json(result[0])
+      } else {
+        res.send(false)
+      }
     }
 
     var retornoBuscaSQL = new buscaSQL(_dbConnection, _callback);
     retornoBuscaSQL.getUsuario(dados);
 
   } catch (error) {
-    console.log('error ' + error);
-    res.status(400).send(error);
+    res.status(400).send(error)
   }
-});
+})
+
+app.get('/usuario', function (req, res) {
+  try {
+    var dados = []
+    dados['ra'] = req.query.ra
+    dados['senha'] = req.query.senha
+
+    var _dbConnection = dbConnection()
+
+    var _callback = function (error, result) {
+      _dbConnection.destroy()
+      if(result.length > 0) {
+        res.status(200).json(result)
+      } else {
+        res.send(false)
+      }
+    }
+
+    var retornoBuscaSQL = new buscaSQL(_dbConnection, _callback)
+    retornoBuscaSQL.getUsuario(dados)
+
+  } catch (error) {
+    res.status(400).send(error)
+  }
+})
+
+app.get
+(
+  '/senhasMorumbi',
+  (req, res) => {
+    try {
+      var _dbConnection = dbConnection()
+
+      var _callback = function (error, result) {
+        _dbConnection.destroy()
+        if (result.length > 0) {
+          res.status(200).json(result)
+        } else {
+          res.send(false)
+        }
+      }
+
+      var retornoBuscaSQL = new buscaSQL(_dbConnection, _callback)
+      retornoBuscaSQL.getMorumbi()
+    } catch (err) {
+      res.status(400).send(err)
+    }
+  }
+)
+
+app.get
+(
+  '/senhas',
+  (req, res) => {
+    try {
+      var _dbConnection = dbConnection()
+      var local = req.query.local
+      var _callback = function (error, result) {
+        _dbConnection.destroy()
+        if (result.length > 0) {
+          res.status(200).json(result)
+        } else {
+          res.send(false)
+        }
+      }
+
+      var retornoBuscaSQL = new buscaSQL(_dbConnection, _callback)
+      retornoBuscaSQL.getSenhas(local)
+    } catch (err) {
+      res.status(400).send(err)
+    }
+  }
+)
 
 
 
@@ -119,6 +196,22 @@ buscaSQL.prototype.getUsuario = function (dados) {
         dados.ra,
         dados.senha
       ],
+      this._callback
+    );
+}
+
+buscaSQL.prototype.getMorumbi = function () {
+  this._dbConnection.query
+    (
+      ' SELECT * FROM senhaMorumbi',
+      this._callback
+    );
+}
+
+buscaSQL.prototype.getSenhas = function (local) {
+  this._dbConnection.query
+    (
+      ` SELECT * FROM ${local}`,
       this._callback
     );
 }

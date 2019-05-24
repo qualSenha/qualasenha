@@ -9,8 +9,8 @@ import { ServidorProvider } from '../../providers/servidor/servidor';
 export class ContactPage {
 
   
-  //public alunos: any;
- 
+  public alunos: any;
+  
   model: Usuario;
 
   constructor(
@@ -18,17 +18,15 @@ export class ContactPage {
     public navParams: NavParams,
     public servidor: ServidorProvider  
     ) {
-      this.model = new Usuario();
-      this.model = navParams.get('model')
-      //this.getRetornar();
-      
+      this.model = new Usuario()
+      this.model = navParams.data      
   }
   
-  /* getRetornar(){
-    this.servidor.getUsuarios()
+  getRetornar(){
+    this.servidor.getConfiguracoes(this.model)
       .then((result: any) => {
         /* this.model.ra = result[0].ra;
-        this.model.senha = result[0].senha; *./
+        this.model.senha = result[0].senha; */
         console.log(result)
         for (var i = 0; i < result.length; i++) {
           var aluno = result[i];
@@ -38,12 +36,12 @@ export class ContactPage {
       .catch((error: any) => {
         console.log(error)
       });
-  } */
+  }
 
   ionViewDidEnter () {
-    console.log(this.model)
-    /* this.alunos = [];
-    this.getRetornar(); */
+    //console.log(this.model)
+    this.alunos = [];
+    this.getRetornar();
   }
 
 

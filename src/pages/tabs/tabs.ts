@@ -17,21 +17,17 @@ export class TabsPage {
   tab2Root = AboutPage;
   tab3Root = ContactPage;
 
-
   constructor(public navParams: NavParams) {
     this.model = new Usuarios()
     this.model = navParams.get('model')
+    this.model.localAtendimento = navParams.get('campus')
   }
 
-  ionViewDidEnter () {
-    console.log('oi', this.model)
-  }
+  ionViewDidEnter () {}
 }
 
 export class Usuarios {
   ra: any;
   senha: any;
-  email: any;
-  dtNascimento: any;
-  telefone: any;
+  localAtendimento: any;
 }

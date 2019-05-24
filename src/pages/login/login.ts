@@ -24,21 +24,26 @@ export class LoginPage {
     this.model = new Usuario();
   }
  
-  entrar(dados) {
+  entrar(dados, campus) {
     this.navCtrl.push(TabsPage, {
-      model : dados
+      model : dados,
+      campus : campus
     })
   }
-    
+
   ionViewDidLoad() {}
 
   getUsuario() {
     this.servidor.getUsuario(this.model)
       .then((result: any) => {
-        this.entrar(result)
+        if(result) {
+          this.entrar(result, this.model.localAtendimento)
+        } else {
+          this.toast.create({ message: 'Usuário incorreto', position: 'botton', duration: 3000}).present()
+        }
       })
       .catch((error: any) => {
-        console.log(error)
+        this.toast.create({ message: 'Falha no sistema', position: 'botton', duration: 3000}).present()
       });
   }
 }
@@ -46,4 +51,5 @@ export class LoginPage {
 export class Usuario {
   ra: any;
   senha: any;
+  localAtendimento: any;
 }
