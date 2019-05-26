@@ -4,11 +4,61 @@ webpackJsonp([2],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeSgPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(78);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the HomeSgPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HomeSgPage = /** @class */ (function () {
+    function HomeSgPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    HomeSgPage.prototype.openCancelar = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
+    };
+    HomeSgPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HomeSgPage');
+    };
+    HomeSgPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home-sg',template:/*ion-inline-start:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home-sg/home-sg.html"*/'<ion-header>\n  <ion-navbar transparent style="background-color: #FF0000">\n    <ion-title><span>Home</span></ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n\n  <ion-card-content style=" background-color: #9C9C9C">\n  <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n    Senhas Chamadas<br>\n\n  </ion-list>\n</ion-card-content>\n\n<ion-card color="roxo">\n  <ion-card-content style="background-color: #D8D8D8;text-align: center; font-size: 30px">\n    <ion-list >\n      Sua Senha:\n    <ion-item-sliding>\n\n      <ion-item>\n\n        <h2 style="color: #000000; font-size: 30px; text-align: center">6</h2>\n      </ion-item>\n\n      <ion-item-options side="left">\n        <button ion-button color="danger" (click)="openCancelar()" >\n          Cancelar\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n\n    </ion-item-sliding>\n  </ion-list>\n  </ion-card-content>\n\n</ion-card>\n\n<ion-card>\n  <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">Senha</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">Guiche</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n\n<ion-card>\n  <ion-card-content style="font-size: 30px">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">1</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">02</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n\n<ion-card>\n  <ion-card-content style="font-size: 30px">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">5</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">03</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n<ion-card>\n  <ion-card-content style="font-size: 30px">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">A69</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">04</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home-sg/home-sg.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], HomeSgPage);
+    return HomeSgPage;
+}());
+
+//# sourceMappingURL=home-sg.js.map
+
+/***/ }),
+
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* unused harmony export Usuario */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_servidor_servidor__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -91,7 +141,7 @@ var Usuario = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 112:
+/***/ 113:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -104,11 +154,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 112;
+webpackEmptyAsyncContext.id = 113;
 
 /***/ }),
 
-/***/ 153:
+/***/ 154:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -132,21 +182,21 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 153;
+webpackAsyncContext.id = 154;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 154:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* unused harmony export Usuarios */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -192,7 +242,7 @@ var Usuarios = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 155:
+/***/ 156:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -200,7 +250,7 @@ var Usuarios = /** @class */ (function () {
 /* unused harmony export Usuario */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_sg_home_sg__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_servidor_servidor__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -227,7 +277,7 @@ var AboutPage = /** @class */ (function () {
         this.model.localAtendimento = navParams.data.localAtendimento;
     }
     AboutPage.prototype.openAgendar = function () {
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_sg_home_sg__["a" /* HomeSgPage */]);
     };
     AboutPage.prototype.gerarSenha = function () {
         var _this = this;
@@ -235,12 +285,8 @@ var AboutPage = /** @class */ (function () {
             .then(function (result) {
             if (result) {
                 _this.navParams.data.senhaAtendimento = result.ID;
-                var alert_1 = _this.alertCtrl.create({
-                    title: 'Sucesso!',
-                    subTitle: "Sua senha agendada \u00E9: " + result.ID,
-                    buttons: ['OK'],
-                });
-                alert_1.present();
+                _this.showAlert(result.ID);
+                //this.navCtrl.push('HomePage')
             }
         })
             .catch(function (error) {
@@ -252,13 +298,12 @@ var AboutPage = /** @class */ (function () {
         });
     };
     AboutPage.prototype.showAlert = function (senha) {
-        /* const alert = this.alertCtrl.create({
+        var alert = this.alertCtrl.create({
             title: 'Sucesso!',
-            subTitle: `Sua senha agendada é: ${senha}`,
+            subTitle: "Sua senha agendada \u00E9: " + senha,
             buttons: ['OK'],
         });
-        alert.present(); */
-        this.navCtrl.pop();
+        alert.present();
     };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -283,7 +328,7 @@ var Usuario = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 156:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -351,56 +396,6 @@ var Usuario = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeSgPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(47);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the HomeSgPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HomeSgPage = /** @class */ (function () {
-    function HomeSgPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    HomeSgPage.prototype.openCancelar = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
-    };
-    HomeSgPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HomeSgPage');
-    };
-    HomeSgPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-sg',template:/*ion-inline-start:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home-sg/home-sg.html"*/'<ion-header>\n  <ion-navbar transparent style="background-color: #FF0000">\n    <ion-title><span>Home</span></ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n\n  <ion-card-content style=" background-color: #9C9C9C">\n  <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n    Senhas Chamadas<br>\n\n  </ion-list>\n</ion-card-content>\n\n<ion-card color="roxo">\n  <ion-card-content style="background-color: #D8D8D8;text-align: center; font-size: 30px">\n    <ion-list >\n      Sua Senha:\n    <ion-item-sliding>\n\n      <ion-item>\n\n        <h2 style="color: #000000; font-size: 30px; text-align: center">6</h2>\n      </ion-item>\n\n      <ion-item-options side="left">\n        <button ion-button color="danger" (click)="openCancelar()" >\n          Cancelar\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n\n    </ion-item-sliding>\n  </ion-list>\n  </ion-card-content>\n\n</ion-card>\n\n<ion-card>\n  <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">Senha</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">Guiche</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n\n<ion-card>\n  <ion-card-content style="font-size: 30px">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">1</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">02</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n\n<ion-card>\n  <ion-card-content style="font-size: 30px">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">5</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">03</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n<ion-card>\n  <ion-card-content style="font-size: 30px">\n  <ion-row>\n    <ion-col col-4 style="text-align: center;">A69</ion-col>\n    <ion-col style="text-align: center;">| </ion-col>\n    <ion-col style="text-align: center;">04</ion-col>\n  </ion-row>\n  </ion-card-content>\n</ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home-sg/home-sg.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], HomeSgPage);
-    return HomeSgPage;
-}());
-
-//# sourceMappingURL=home-sg.js.map
-
-/***/ }),
-
 /***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -424,16 +419,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_servidor_servidor__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_sg_home_sg__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_sg_home_sg__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -510,9 +505,9 @@ var AppModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -568,10 +563,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var ServidorProvider = /** @class */ (function () {
+    //private url = "http://289e5d76.ngrok.io"
     function ServidorProvider(http) {
         this.http = http;
-        //private url = "http://localhost:8880";
-        this.url = "http://289e5d76.ngrok.io";
+        this.url = "http://localhost:8880";
         console.log('Hello ServidorProvider Provider');
     }
     ServidorProvider.prototype.getUsuario = function (model) {
@@ -672,7 +667,7 @@ var ServidorProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 47:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -794,7 +789,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar transparent style="background-color: #FF0000">\n    <ion-title><span>Home</span></ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-card>\n    <ion-card-content style=" background-color: #D8D8D8" *ngIf="!model.senha">\n      <ion-list style="color: #000;font-size: 30px; text-align: center">\n        {{model.local}}<br>\n      </ion-list>\n    </ion-card-content>\n\n    <ion-card-content style="background-color: #D8D8D8;text-align: center; font-size: 30px " *ngIf="model.senha">\n      <ion-list>\n        Sua Senha:\n        <ion-item-sliding>\n          <ion-item>\n            <h2 style="color: #000000; font-size: 30px; text-align: center">{{model.senha}}</h2>\n          </ion-item>\n          <ion-item-options side="left">\n            <button ion-button color="danger" (click)="cancelarSenha()">\n              Cancelar\n              <ion-icon name="trash"></ion-icon>\n            </button>\n          </ion-item-options>\n        </ion-item-sliding>\n      </ion-list>\n    </ion-card-content>\n\n  </ion-card>\n  <ion-card>\n    <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n      <ion-row>\n        <ion-col col-4 style="text-align: center;">Senha</ion-col>\n        <ion-col style="text-align: center;">| </ion-col>\n        <ion-col style="text-align: center;">Guiche</ion-col>\n      </ion-row>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card-content style="font-size: 30px" *ngFor="let senha of senhas">\n    <ion-row>\n      <ion-col col-4 style="text-align: center;">{{ senha.ID }}</ion-col>\n      <ion-col style="text-align: center;">| </ion-col>\n      <ion-col style="text-align: center;">01</ion-col>\n    </ion-row>\n  </ion-card-content>\n\n  <ion-card-content>\n    <button ion-button block large (click)="showAlert();gerarSenha()" color="danger" round outline [disabled]="model.senha">\n      Gerar Senha\n    </button>\n  </ion-card-content>\n\n\n</ion-content>'/*ion-inline-end:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar transparent style="background-color: #FF0000">\n    <ion-title><span>Home</span></ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-card>\n    <ion-card-content style=" background-color: #D8D8D8" *ngIf="!model.senha">\n      <ion-list style="color: #000;font-size: 30px; text-align: center">\n        {{model.local}}<br>\n      </ion-list>\n    </ion-card-content>\n\n    <ion-card-content style="background-color: #D8D8D8;text-align: center; font-size: 30px " *ngIf="model.senha">\n      <ion-list>\n        Sua Senha:\n        <ion-item-sliding>\n          <ion-item>\n            <h2 style="color: #000000; font-size: 30px; text-align: center">{{model.senha}}</h2>\n          </ion-item>\n          <ion-item-options side="left">\n            <button ion-button color="danger" (click)="cancelarSenha()">\n              Cancelar\n              <ion-icon name="trash"></ion-icon>\n            </button>\n          </ion-item-options>\n        </ion-item-sliding>\n      </ion-list>\n    </ion-card-content>\n\n  </ion-card>\n  <ion-card>\n    <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n      <ion-row>\n        <ion-col col-4 style="text-align: center;">Senha</ion-col>\n        <ion-col style="text-align: center;">| </ion-col>\n        <ion-col style="text-align: center;">Guiche</ion-col>\n      </ion-row>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card-content style="font-size: 30px" *ngFor="let senha of senhas">\n    <ion-row>\n      <ion-col col-4 style="text-align: center;">{{ senha.ID }}</ion-col>\n      <ion-col style="text-align: center;">| </ion-col>\n      <ion-col style="text-align: center;">{{ senha.guiche }}</ion-col>\n    </ion-row>\n  </ion-card-content>\n\n  <ion-card-content>\n    <button ion-button block large (click)="showAlert();gerarSenha()" color="danger" round outline [disabled]="model.senha">\n      Gerar Senha\n    </button>\n  </ion-card-content>\n\n\n</ion-content>'/*ion-inline-end:"/Users/brendacustodio/Documents/Facul/projeto/qualasenha/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],

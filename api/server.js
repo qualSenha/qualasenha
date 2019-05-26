@@ -1,7 +1,8 @@
 var express = require('express'),
   mysql = require('mysql'),
   expressvalidator = require('express-validator'),
-  cors = require('cors');
+  cors = require('cors'),
+  random = require('random-number');
 
 var port = 8880;
 var app = express();
@@ -144,7 +145,14 @@ app.get
       var _callback = function (error, result) {
         _dbConnection.destroy()
         if (result.length > 0) {
+          var options = {
+            min: 1,
+            max: 4,
+            integer: true
+          }
+
           for(var i=0; i < result.length; i++) {
+            result[i]['guiche'] = random(options)
             if(result[i].agendada === '1') {
               result[i].ID = `A${result[i].ID}`
             } else {
