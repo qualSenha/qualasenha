@@ -28,7 +28,7 @@
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Solicitação</ion-label>
-        <ion-select [(ngModel)]="a">
+        <ion-select [(ngModel)]="solicitacao">
           <ion-option value="financeiro">Financeiro</ion-option>
           <ion-option value="matricula">Matricula</ion-option>
           <ion-option value="DP/ADAP">Disciplinas, Eletivas, DP e ADAP</ion-option>
@@ -41,14 +41,14 @@
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Dia</ion-label>
-      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="a"></ion-datetime>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="data"></ion-datetime>
     </ion-item>
   </ion-card-content>
 
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Hora</ion-label>
-      <ion-datetime displayFormat="HH:mm" [(ngModel)]="a"></ion-datetime>
+      <ion-datetime displayFormat="HH:mm" [(ngModel)]="hora"></ion-datetime>
     </ion-item> 
   </ion-card-content>
 
