@@ -11,7 +11,7 @@ import { ServidorProvider } from '../../providers/servidor/servidor';
 
 export class HomePage {
 	public senhas: any;
-	local: any
+	model: Usuario;
 
 	constructor(
 		public toast: ToastController,
@@ -19,7 +19,10 @@ export class HomePage {
 		public alertCtrl: AlertController,
 		public servidor: ServidorProvider,
 		public navParams: NavParams) {
-			this.local = navParams.data.localAtendimento
+			this.model = new Usuario()
+			this.model.senha = navParams.data.senhaAtendimento
+			this.model.ra = navParams.data.ra
+			this.model.localAtendimento = navParams.data.localAtendimento
 		}
 
 	showAlert() {
@@ -34,6 +37,7 @@ export class HomePage {
 	ionViewDidEnter() {
 		this.senhas = []
 		this.getSenhasMorumbi()
+		//this.getSenha()
 	}
 	
 	getSenhasMorumbi() {
@@ -43,7 +47,8 @@ export class HomePage {
           for (var i = 0; i < result.length; i++) {
 						var senha = result[i];
 						this.senhas.push(senha);
-					}
+					} 
+					this.getSenha()
         } else {
           this.toast.create({ message: 'Usuário incorreto', position: 'botton', duration: 3000}).present()
         }
@@ -54,7 +59,7 @@ export class HomePage {
 	}
 	
 	getSenhas() {
-		this.servidor.getSenhas(this.local)
+		this.servidor.getSenhas(this.model.localAtendimento)
 			.then(
 				(result: any) => {
 					console.log(result)
@@ -66,8 +71,59 @@ export class HomePage {
 				}
 			)
 	}
-
-  	openGerar() {
-		this.navCtrl.setRoot(HomeSgPage);
+		gerarSenha() {
+		this.servidor.gerarSenha(this.model.ra,false)
+			.then(
+				(result: any) => {
+					if(result) {
+						this.model.senha = result.ID
+					}
+					console.log(result)
+				}
+			)
+			.catch(
+				(error: any) => {
+					this.toast.create({
+						message: 'Falha no sistema',
+						position: 'botton',
+						duration: 3000
+					}).present()
+				}
+			)
 	}
+
+	cancelarSenha() {
+		this.servidor.cancelar(this.model.senha)
+			.then(
+				(result: any) => {
+					if(result) {
+						this.model.senha = false
+					}
+				}
+			)
+			.catch(
+				(error: any) => {
+					this.toast.create({
+						message: 'Falha no sistema',
+						position: 'botton',
+						duration: 3000
+					}).present()
+				}
+			)
+	}
+	getSenha() {
+    this.servidor.getSenhaGerada(this.model.ra)
+      .then((result: any) => { 
+        if(result.senha) {
+        this.model.senha=result.senha}
+      })
+      .catch((error: any) => {
+        this.toast.create({ message: 'Falha no sistema', position: 'botton', duration: 3000}).present()
+      });
+	}
+}
+export class Usuario {
+  ra: any;
+	localAtendimento: any;
+	senha: any;
 }

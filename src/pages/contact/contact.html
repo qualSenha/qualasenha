@@ -5,13 +5,13 @@
 </ion-header>
 
 <ion-content>
-
+    <ion-card>
     <ion-card-content style=" background-color: #9C9C9C">
       <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">
         Dados Pessoais
       </ion-list>
     </ion-card-content>
-
+  </ion-card>
     <ion-card-content style="text-align: left; font-size: 30px">
       <ion-item *ngFor="let aluno of alunos">
        <ion-label>Nome Completo: {{ aluno.nome }}</ion-label> 

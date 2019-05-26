@@ -23,11 +23,13 @@ export class TabsPage {
     this.model.localAtendimento = navParams.get('campus')
   }
 
-  ionViewDidEnter () {}
+  ionViewDidEnter () {
+  }
 }
 
 export class Usuarios {
   ra: any;
   senha: any;
   localAtendimento: any;
+  senhaAtendimento: any;
 }

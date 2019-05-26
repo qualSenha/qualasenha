@@ -5,13 +5,14 @@
 </ion-header>
 
 <ion-content >
-
+  <ion-card>
     <ion-card-content style=" background-color: #9C9C9C">
       <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">
       Dados Agendamento<br>
       </ion-list>
     </ion-card-content>
-
+  </ion-card>
+  
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Local</ion-label>
@@ -51,7 +52,7 @@
     </ion-item> 
   </ion-card-content>
 
-    <ion-card-content style=" background-color: #9C9C9C;text-align: center; font-size: 30px">
+   <!-- <ion-card-content style=" background-color: #9C9C9C;text-align: center; font-size: 30px">
       <ion-list style="color: #FFFFFF">
         Opções
       </ion-list>
@@ -70,9 +71,9 @@
         </ion-item>
       </ion-item-sliding>
     </ion-card-content>
-
+  -->
   <ion-card-content>
-    <button ion-button block large color="danger" (click)="openAgendar()" round outline>Agendar</button>
+    <button ion-button block large color="danger" (click)="gerarSenha()" round outline>Agendar</button>
   </ion-card-content>
 
 </ion-content>

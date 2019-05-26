@@ -1,5 +1,55 @@
 webpackJsonp([2],{
 
+/***/ 102:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeSgPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(78);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the HomeSgPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HomeSgPage = /** @class */ (function () {
+    function HomeSgPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    HomeSgPage.prototype.openCancelar = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
+    };
+    HomeSgPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HomeSgPage');
+    };
+    HomeSgPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home-sg',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home-sg\home-sg.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Home</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content >\n\n\n\n  <ion-card-content style=" background-color: #9C9C9C">\n\n  <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n    Senhas Chamadas<br>\n\n\n\n  </ion-list>\n\n</ion-card-content>\n\n\n\n<ion-card color="roxo">\n\n  <ion-card-content style="background-color: #D8D8D8;text-align: center; font-size: 30px">\n\n    <ion-list >\n\n      Sua Senha:\n\n    <ion-item-sliding>\n\n\n\n      <ion-item>\n\n\n\n        <h2 style="color: #000000; font-size: 30px; text-align: center">6</h2>\n\n      </ion-item>\n\n\n\n      <ion-item-options side="left">\n\n        <button ion-button color="danger" (click)="openCancelar()" >\n\n          Cancelar\n\n          <ion-icon name="trash"></ion-icon>\n\n        </button>\n\n      </ion-item-options>\n\n\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">Senha</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">Guiche</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">1</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">02</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">5</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">03</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">A69</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">04</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home-sg\home-sg.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], HomeSgPage);
+    return HomeSgPage;
+}());
+
+//# sourceMappingURL=home-sg.js.map
+
+/***/ }),
+
 /***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9,8 +59,8 @@ webpackJsonp([2],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_servidor_servidor__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_servidor_servidor__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -136,7 +186,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -186,9 +236,11 @@ var Usuarios = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* unused harmony export Usuario */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_sg_home_sg__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_sg_home_sg__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_servidor_servidor__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -201,23 +253,53 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AboutPage = /** @class */ (function () {
-    function AboutPage(navCtrl, navParams) {
+    function AboutPage(navCtrl, navParams, servidor, toast) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.servidor = servidor;
+        this.toast = toast;
+        this.model = new Usuario();
+        this.model.ra = navParams.data.ra;
         console.log('gerar', navParams.data);
     }
     AboutPage.prototype.openAgendar = function () {
         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_sg_home_sg__["a" /* HomeSgPage */]);
     };
+    AboutPage.prototype.gerarSenha = function () {
+        var _this = this;
+        this.servidor.gerarSenha(this.model.ra, true)
+            .then(function (result) {
+            if (result) {
+                _this.model.senha = result.ID;
+            }
+            console.log(result);
+        })
+            .catch(function (error) {
+            _this.toast.create({
+                message: 'Falha no sistema',
+                position: 'botton',
+                duration: 3000
+            }).present();
+        });
+    };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Agendamento</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content >\n\n\n\n    <ion-card-content style=" background-color: #9C9C9C">\n\n      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n      Dados Agendamento<br>\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Local</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="campusLiberdade">Liberdade</ion-option>\n\n          <ion-option value="campusBrigadeiro">Brigadeiro</ion-option>\n\n          <ion-option value="campusMorumbi">Morumbi</ion-option>\n\n          <ion-option value="campusSantoAmaro">Santo Amaro</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>  \n\n\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Solicitação</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="financeiro">Financeiro</ion-option>\n\n          <ion-option value="matricula">Matricula</ion-option>\n\n          <ion-option value="DP/ADAP">Disciplinas, Eletivas, DP e ADAP</ion-option>\n\n          <ion-option value="estagio">Estagio</ion-option>\n\n          <ion-option value="outros">Outros Serviços</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>\n\n\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Dia</ion-label>\n\n      <ion-datetime displayFormat="DD:HH" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item>\n\n  </ion-card-content>\n\n\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Hora</ion-label>\n\n      <ion-datetime displayFormat="HH" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item> \n\n  </ion-card-content>\n\n\n\n    <ion-card-content style=" background-color: #9C9C9C;text-align: center; font-size: 30px">\n\n      <ion-list style="color: #FFFFFF">\n\n        Opções\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item-sliding>\n\n        <ion-item>\n\n          <ion-label>Notificar Quando faltar</ion-label>\n\n          <ion-select [(ngModel)]="a">\n\n            <ion-option value="1Senha">1 Senha</ion-option>\n\n            <ion-option value="2Senhas">2 Senhas</ion-option>\n\n            <ion-option value="5Senhas">5 Senhas</ion-option>\n\n            <ion-option value="10Senhas">10 Senhas</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n\n      </ion-item-sliding>\n\n    </ion-card-content>\n\n\n\n  <ion-card-content>\n\n    <button ion-button block large color="danger" (click)="openAgendar()" round outline>Agendar</button>\n\n  </ion-card-content>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Agendamento</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content >\n\n  <ion-card>\n\n    <ion-card-content style=" background-color: #9C9C9C">\n\n      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n      Dados Agendamento<br>\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  \n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Local</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="campusLiberdade">Liberdade</ion-option>\n\n          <ion-option value="campusBrigadeiro">Brigadeiro</ion-option>\n\n          <ion-option value="campusMorumbi">Morumbi</ion-option>\n\n          <ion-option value="campusSantoAmaro">Santo Amaro</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>  \n\n\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Solicitação</ion-label>\n\n        <ion-select [(ngModel)]="a">\n\n          <ion-option value="financeiro">Financeiro</ion-option>\n\n          <ion-option value="matricula">Matricula</ion-option>\n\n          <ion-option value="DP/ADAP">Disciplinas, Eletivas, DP e ADAP</ion-option>\n\n          <ion-option value="estagio">Estagio</ion-option>\n\n          <ion-option value="outros">Outros Serviços</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  </ion-card-content>\n\n\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Dia</ion-label>\n\n      <ion-datetime displayFormat="DD:HH" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item>\n\n  </ion-card-content>\n\n\n\n  <ion-card-content style="text-align: left; font-size: 30px">\n\n    <ion-item>\n\n      <ion-label>Hora</ion-label>\n\n      <ion-datetime displayFormat="HH" [(ngModel)]="a"></ion-datetime>\n\n    </ion-item> \n\n  </ion-card-content>\n\n\n\n   <!-- <ion-card-content style=" background-color: #9C9C9C;text-align: center; font-size: 30px">\n\n      <ion-list style="color: #FFFFFF">\n\n        Opções\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item-sliding>\n\n        <ion-item>\n\n          <ion-label>Notificar Quando faltar</ion-label>\n\n          <ion-select [(ngModel)]="a">\n\n            <ion-option value="1Senha">1 Senha</ion-option>\n\n            <ion-option value="2Senhas">2 Senhas</ion-option>\n\n            <ion-option value="5Senhas">5 Senhas</ion-option>\n\n            <ion-option value="10Senhas">10 Senhas</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n\n      </ion-item-sliding>\n\n    </ion-card-content>\n\n  -->\n\n  <ion-card-content>\n\n    <button ion-button block large color="danger" (click)="gerarSenha()" round outline>Agendar</button>\n\n  </ion-card-content>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\about\about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_servidor_servidor__["a" /* ServidorProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]])
     ], AboutPage);
     return AboutPage;
+}());
+
+var Usuario = /** @class */ (function () {
+    function Usuario() {
+    }
+    return Usuario;
 }());
 
 //# sourceMappingURL=about.js.map
@@ -232,7 +314,7 @@ var AboutPage = /** @class */ (function () {
 /* unused harmony export Usuario */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_servidor_servidor__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_servidor_servidor__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -276,7 +358,7 @@ var ContactPage = /** @class */ (function () {
     };
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Configurações</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <ion-card-content style=" background-color: #9C9C9C">\n\n      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n        Dados Pessoais\n\n      </ion-list>\n\n    </ion-card-content>\n\n\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n       <ion-label>Nome Completo: {{ aluno.nome }}</ion-label> \n\n      </ion-item>\n\n    </ion-card-content>\n\n  \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>CPF: {{ aluno.cpf }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>E-mail: {{ aluno.email }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>Data de Nascimento: {{ aluno.dataNascimento | date: "dd/MM/yyyy" }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content>\n\n \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>Telefone: {{ aluno.telefone }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content> \n\n\n\n  <!--<ion-card-content>\n\n    <button ion-button block large color="danger" onclick="alert(\'Configurações Atulizadas Com Sucesso\')"outline round >Atualizar</button>\n\n  </ion-card-content>-->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Configurações</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-card>\n\n    <ion-card-content style=" background-color: #9C9C9C">\n\n      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n        Dados Pessoais\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n       <ion-label>Nome Completo: {{ aluno.nome }}</ion-label> \n\n      </ion-item>\n\n    </ion-card-content>\n\n  \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>CPF: {{ aluno.cpf }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>E-mail: {{ aluno.email }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content>\n\n  \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>Data de Nascimento: {{ aluno.dataNascimento | date: "dd/MM/yyyy" }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content>\n\n \n\n    <ion-card-content style="text-align: left; font-size: 30px">\n\n      <ion-item *ngFor="let aluno of alunos">\n\n        <ion-label>Telefone: {{ aluno.telefone }}</ion-label>\n\n      </ion-item>\n\n    </ion-card-content> \n\n\n\n  <!--<ion-card-content>\n\n    <button ion-button block large color="danger" onclick="alert(\'Configurações Atulizadas Com Sucesso\')"outline round >Atualizar</button>\n\n  </ion-card-content>-->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\contact\contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
@@ -320,13 +402,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_servidor_servidor__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_sg_home_sg__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_servidor_servidor__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_sg_home_sg__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -443,13 +525,13 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 46:
+/***/ 40:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServidorProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -464,7 +546,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ServidorProvider = /** @class */ (function () {
     function ServidorProvider(http) {
         this.http = http;
-        this.url = "http://localhost:8880";
+        this.url = "http://4d3b1202.ngrok.io";
         console.log('Hello ServidorProvider Provider');
     }
     ServidorProvider.prototype.getUsuario = function (model) {
@@ -516,6 +598,44 @@ var ServidorProvider = /** @class */ (function () {
             });
         });
     };
+    ServidorProvider.prototype.gerarSenha = function (ra, agendada) {
+        var _this = this;
+        var link = this.url + "/senha";
+        var body = { "ra": ra, "agendada": agendada };
+        return new Promise(function (resolve, reject) {
+            _this.http.post(link, body)
+                .subscribe(function (result) {
+                resolve(result.json());
+            }, function (error) {
+                reject(error.json());
+            });
+        });
+    };
+    ServidorProvider.prototype.cancelar = function (id) {
+        var _this = this;
+        var link = this.url + "/cancelar";
+        var body = { "id": id };
+        return new Promise(function (resolve, reject) {
+            _this.http.post(link, body)
+                .subscribe(function (result) {
+                resolve(result.json());
+            }, function (error) {
+                reject(error.json());
+            });
+        });
+    };
+    ServidorProvider.prototype.getSenhaGerada = function (ra) {
+        var _this = this;
+        var link = this.url + "/senhaGerada?ra=" + ra;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(link)
+                .subscribe(function (result) {
+                resolve(result.json());
+            }, function (error) {
+                reject(error.json());
+            });
+        });
+    };
     ServidorProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
@@ -527,65 +647,15 @@ var ServidorProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 51:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeSgPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(79);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the HomeSgPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HomeSgPage = /** @class */ (function () {
-    function HomeSgPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    HomeSgPage.prototype.openCancelar = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
-    };
-    HomeSgPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HomeSgPage');
-    };
-    HomeSgPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-sg',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home-sg\home-sg.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Home</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content >\n\n\n\n  <ion-card-content style=" background-color: #9C9C9C">\n\n  <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n    Senhas Chamadas<br>\n\n\n\n  </ion-list>\n\n</ion-card-content>\n\n\n\n<ion-card color="roxo">\n\n  <ion-card-content style="background-color: #D8D8D8;text-align: center; font-size: 30px">\n\n    <ion-list >\n\n      Sua Senha:\n\n    <ion-item-sliding>\n\n\n\n      <ion-item>\n\n\n\n        <h2 style="color: #000000; font-size: 30px; text-align: center">6</h2>\n\n      </ion-item>\n\n\n\n      <ion-item-options side="left">\n\n        <button ion-button color="danger" (click)="openCancelar()" >\n\n          Cancelar\n\n          <ion-icon name="trash"></ion-icon>\n\n        </button>\n\n      </ion-item-options>\n\n\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n  </ion-card-content>\n\n\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">Senha</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">Guiche</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">1</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">02</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">5</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">03</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">A69</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">04</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home-sg\home-sg.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], HomeSgPage);
-    return HomeSgPage;
-}());
-
-//# sourceMappingURL=home-sg.js.map
-
-/***/ }),
-
-/***/ 79:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* unused harmony export Usuario */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_sg_home_sg__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_servidor_servidor__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_servidor_servidor__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -595,7 +665,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
 
 
 
@@ -607,7 +676,10 @@ var HomePage = /** @class */ (function () {
         this.alertCtrl = alertCtrl;
         this.servidor = servidor;
         this.navParams = navParams;
-        this.local = navParams.data.localAtendimento;
+        this.model = new Usuario();
+        this.model.senha = navParams.data.senhaAtendimento;
+        this.model.ra = navParams.data.ra;
+        this.model.localAtendimento = navParams.data.localAtendimento;
     }
     HomePage.prototype.showAlert = function () {
         var alert = this.alertCtrl.create({
@@ -620,6 +692,7 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.ionViewDidEnter = function () {
         this.senhas = [];
         this.getSenhasMorumbi();
+        //this.getSenha()
     };
     HomePage.prototype.getSenhasMorumbi = function () {
         var _this = this;
@@ -630,6 +703,7 @@ var HomePage = /** @class */ (function () {
                     var senha = result[i];
                     _this.senhas.push(senha);
                 }
+                _this.getSenha();
             }
             else {
                 _this.toast.create({ message: 'Usuário incorreto', position: 'botton', duration: 3000 }).present();
@@ -641,7 +715,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage.prototype.getSenhas = function () {
         var _this = this;
-        this.servidor.getSenhas(this.local)
+        this.servidor.getSenhas(this.model.localAtendimento)
             .then(function (result) {
             console.log(result);
         })
@@ -649,20 +723,65 @@ var HomePage = /** @class */ (function () {
             _this.toast.create({ message: 'Falha no sistema', position: 'botton', duration: 3000 }).present();
         });
     };
-    HomePage.prototype.openGerar = function () {
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_sg_home_sg__["a" /* HomeSgPage */]);
+    HomePage.prototype.gerarSenha = function () {
+        var _this = this;
+        this.servidor.gerarSenha(this.model.ra, false)
+            .then(function (result) {
+            if (result) {
+                _this.model.senha = result.ID;
+            }
+            console.log(result);
+        })
+            .catch(function (error) {
+            _this.toast.create({
+                message: 'Falha no sistema',
+                position: 'botton',
+                duration: 3000
+            }).present();
+        });
+    };
+    HomePage.prototype.cancelarSenha = function () {
+        var _this = this;
+        this.servidor.cancelar(this.model.senha)
+            .then(function (result) {
+            if (result) {
+                _this.model.senha = false;
+            }
+        })
+            .catch(function (error) {
+            _this.toast.create({
+                message: 'Falha no sistema',
+                position: 'botton',
+                duration: 3000
+            }).present();
+        });
+    };
+    HomePage.prototype.getSenha = function () {
+        var _this = this;
+        this.servidor.getSenhaGerada(this.model.ra)
+            .then(function (result) {
+            if (result.senha) {
+                _this.model.senha = result.senha;
+            }
+        })
+            .catch(function (error) {
+            _this.toast.create({ message: 'Falha no sistema', position: 'botton', duration: 3000 }).present();
+        });
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Home</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n  <ion-card-content style=" background-color: #9C9C9C">\n\n  <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n    Senhas Chamadas<br>\n\n  </ion-list>\n\n</ion-card-content>\n\n\n\n<ion-card>\n\n  <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">Senha</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">Guiche</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n  <ion-card-content style="font-size: 30px" *ngFor="let senha of senhas">\n\n  <ion-row>\n\n    <ion-col col-4 style="text-align: center;">M{{ senha.ID }}</ion-col>\n\n    <ion-col style="text-align: center;">| </ion-col>\n\n    <ion-col style="text-align: center;">01</ion-col>\n\n  </ion-row>\n\n  </ion-card-content>\n\n\n\n\n\n\n\n\n\n  <ion-card-content>\n\n          <button ion-button block large  (click)="showAlert();openGerar()" color="danger" round outline>Gerar Senha\n\n          </button>\n\n</ion-card-content>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar transparent style="background-color: #FF0000">\n\n    <ion-title><span>Home</span></ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-card>\n\n    <ion-card-content style=" background-color: #9C9C9C" *ngIf="!model.senha">\n\n      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">\n\n        Atendimento Morumbi<br>\n\n      </ion-list>\n\n    </ion-card-content>\n\n    \n\n      <ion-card-content style="background-color: #D8D8D8;text-align: center; font-size: 30px "*ngIf="model.senha">\n\n        <ion-list>\n\n            Sua Senha:\n\n          <ion-item-sliding>        \n\n            <ion-item>        \n\n                <h2 style="color: #000000; font-size: 30px; text-align: center">{{model.senha}}</h2>\n\n            </ion-item>        \n\n              <ion-item-options side="left">\n\n                <button ion-button color="danger" (click)="cancelarSenha()" >\n\n                  Cancelar\n\n                  <ion-icon name="trash"></ion-icon>\n\n                </button>\n\n              </ion-item-options>        \n\n          </ion-item-sliding>\n\n        </ion-list>\n\n      </ion-card-content>    \n\n\n\n  </ion-card>\n\n  <ion-card>\n\n    <ion-card-content style="font-size: 30px; background-color: #D8D8D8">\n\n      <ion-row>\n\n        <ion-col col-4 style="text-align: center;">Senha</ion-col>\n\n        <ion-col style="text-align: center;">| </ion-col>\n\n        <ion-col style="text-align: center;">Guiche</ion-col>\n\n      </ion-row>\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-card-content style="font-size: 30px" *ngFor="let senha of senhas">\n\n    <ion-row>\n\n      <ion-col col-4 style="text-align: center;">{{ senha.ID }}</ion-col>\n\n      <ion-col style="text-align: center;">| </ion-col>\n\n      <ion-col style="text-align: center;">01</ion-col>\n\n    </ion-row>\n\n  </ion-card-content>\n\n\n\n  <ion-card-content>\n\n    <button ion-button block large (click)="showAlert();gerarSenha()" color="danger" round outline>Gerar Senha\n\n    </button>\n\n  </ion-card-content>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\kaiqu\Documents\fmu\qualasenha\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_servidor_servidor__["a" /* ServidorProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__providers_servidor_servidor__["a" /* ServidorProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_servidor_servidor__["a" /* ServidorProvider */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _e || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c, _d, _e;
+}());
+
+var Usuario = /** @class */ (function () {
+    function Usuario() {
+    }
+    return Usuario;
 }());
 
 //# sourceMappingURL=home.js.map

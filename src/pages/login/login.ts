@@ -16,35 +16,45 @@ export class LoginPage {
 
   constructor(
     public toast: ToastController,
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController,
     public servidor: ServidorProvider,
-    public http: Http ) {
+    public http: Http) {
     this.model = new Usuario();
   }
- 
+
   entrar(dados, campus) {
     this.navCtrl.push(TabsPage, {
-      model : dados,
-      campus : campus
+      model: dados,
+      campus: campus
     })
   }
 
-  ionViewDidLoad() {}
+  ionViewDidLoad() { }
 
   getUsuario() {
-    this.servidor.getUsuario(this.model)
+    if (this.model.ra == undefined || this.model.senha == undefined || this.model.localAtendimento == undefined) {
+      let alert = this.alertCtrl.create({
+        title: 'ERRO!',
+        subTitle: 'Preencha todos os campos!',
+        buttons: ['OK'],
+      });
+      alert.present();  
+    } else {
+      this.servidor.getUsuario(this.model)
       .then((result: any) => {
-        if(result) {
+        if (result) {
           this.entrar(result, this.model.localAtendimento)
         } else {
-          this.toast.create({ message: 'Usuário incorreto', position: 'botton', duration: 3000}).present()
+          this.toast.create({ message: 'Usuário incorreto', position: 'botton', duration: 3000 }).present()
         }
       })
       .catch((error: any) => {
-        this.toast.create({ message: 'Falha no sistema', position: 'botton', duration: 3000}).present()
+        this.toast.create({ message: 'Falha no sistema', position: 'botton', duration: 3000 }).present()
       });
+              
+    }
   }
 }
 
