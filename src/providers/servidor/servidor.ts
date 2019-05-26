@@ -6,7 +6,8 @@ import { ModuleLoader } from 'ionic-angular/umd/util/module-loader';
 @Injectable()
 export class ServidorProvider {
 
-  private url = "http://4d3b1202.ngrok.io";
+  private url = "http://localhost:8880";
+  //private url = "http://289e5d76.ngrok.io"
 
   constructor(public http: Http) {
     console.log('Hello ServidorProvider Provider');
@@ -75,9 +76,9 @@ export class ServidorProvider {
     })
   }
 
-  gerarSenha(ra,agendada) {
+  gerarSenha(model ,agendada) {
     let link = `${this.url}/senha`
-    let body = { "ra": ra, "agendada": agendada}
+    let body = { "ra": model.ra, "agendada": agendada, "local" : model.localAtendimento }
 
     return new Promise((resolve, reject) => {
       this.http.post(link, body)
@@ -92,9 +93,9 @@ export class ServidorProvider {
     })
   }
   
-  cancelar(id) {
+  cancelar(id, local) {
     let link = `${this.url}/cancelar`
-    let body = { "id": id }
+    let body = { "id": id, "local" : local }
 
     return new Promise((resolve, reject) => {
       this.http.post(link, body)
@@ -108,8 +109,9 @@ export class ServidorProvider {
         )
     })
   }
-  getSenhaGerada(ra) {
-    let link = `${this.url}/senhaGerada?ra=${ra}`
+
+  getSenhaGerada(ra, local) {
+    let link = `${this.url}/senhaGerada?ra=${ra}&local=${local}`
 
     return new Promise((resolve, reject) => {
       this.http.get(link)

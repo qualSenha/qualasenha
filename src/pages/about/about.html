@@ -6,8 +6,8 @@
 
 <ion-content >
   <ion-card>
-    <ion-card-content style=" background-color: #9C9C9C">
-      <ion-list style="color: #FFFFFF;font-size: 30px; text-align: center">
+    <ion-card-content style=" background-color: #D8D8D8">
+      <ion-list style="color: #000;font-size: 30px; text-align: center">
       Dados Agendamento<br>
       </ion-list>
     </ion-card-content>
@@ -16,7 +16,7 @@
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Local</ion-label>
-        <ion-select [(ngModel)]="a">
+        <ion-select [(ngModel)]="model.localAtendimento">
           <ion-option value="campusLiberdade">Liberdade</ion-option>
           <ion-option value="campusBrigadeiro">Brigadeiro</ion-option>
           <ion-option value="campusMorumbi">Morumbi</ion-option>
@@ -41,14 +41,14 @@
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Dia</ion-label>
-      <ion-datetime displayFormat="DD:HH" [(ngModel)]="a"></ion-datetime>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="a"></ion-datetime>
     </ion-item>
   </ion-card-content>
 
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Hora</ion-label>
-      <ion-datetime displayFormat="HH" [(ngModel)]="a"></ion-datetime>
+      <ion-datetime displayFormat="HH:mm" [(ngModel)]="a"></ion-datetime>
     </ion-item> 
   </ion-card-content>
 

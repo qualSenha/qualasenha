@@ -7,8 +7,6 @@ import { ServidorProvider } from '../../providers/servidor/servidor';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
-
-  
   public alunos: any;
   
   model: Usuario;
@@ -25,13 +23,11 @@ export class ContactPage {
   getRetornar(){
     this.servidor.getConfiguracoes(this.model)
       .then((result: any) => {
-        /* this.model.ra = result[0].ra;
-        this.model.senha = result[0].senha; */
-        console.log(result)
-        for (var i = 0; i < result.length; i++) {
-          var aluno = result[i];
-          this.alunos.push(aluno);
-        }
+        this.model.nome = result.nome
+        this.model.email = result.email
+        this.model.dtNascimento = result.dataNascimento
+        this.model.telefone = result.telefone
+        this.model.cpf = result.cpf
       })
       .catch((error: any) => {
         console.log(error)
@@ -39,7 +35,6 @@ export class ContactPage {
   }
 
   ionViewDidEnter () {
-    //console.log(this.model)
     this.alunos = [];
     this.getRetornar();
   }
@@ -49,8 +44,10 @@ export class ContactPage {
 
 export class Usuario {
   ra: any;
+  nome: any;
   senha: any;
   email: any;
   dtNascimento: any;
   telefone: any;
+  cpf: any
 }
