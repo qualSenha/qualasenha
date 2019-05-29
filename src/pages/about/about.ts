@@ -47,10 +47,11 @@ export class AboutPage {
 				}
 			)
 	}
+	
 	showAlert(senha) {
 		const alert = this.alertCtrl.create({
 			title: 'Sucesso!',
-			subTitle: `Sua senha agendada é: ${senha}`,
+			subTitle: `Sua senha agendada é: ${senha}. Lembrando que sua senha poderá alterar no dia.`,
 			buttons: ['OK'],
 		});
 		alert.present();

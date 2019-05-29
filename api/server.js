@@ -147,7 +147,7 @@ app.get
         if (result.length > 0) {
           var options = {
             min: 1,
-            max: 4,
+            max: 6,
             integer: true
           }
 
@@ -200,10 +200,12 @@ app.post
       var _dbConnection = dbConnection()
       var _callback = (error, result) => {
         _dbConnection.destroy()
+        console.log(error)
+        console.log(result)
         if (result) {
           if(result.length > 0) {
             if(result[1][0].agendada === '1') {
-              result[1][0].ID = 'A' + result[1][0].ID
+              result[1][0].ID = `A${result[1][0].ID}`
             } else {
               result[1][0].ID = `S${result[1][0].ID}`
             }
@@ -229,6 +231,8 @@ app.post
     try {
       var id = req.body.id
       var local = req.body.local
+
+      console.log(local)
 
       if (local === 'lib') {
         local = 'senhaLiberdade'
@@ -381,7 +385,8 @@ buscaSQL.prototype.getMorumbi = function () {
 buscaSQL.prototype.getSenhas = function (local) {
   this._dbConnection.query
     (
-      ` SELECT * FROM ${local}`,
+      ` SELECT * FROM ${local} WHERE status = ?`,
+      '0',
       this._callback
     );
 }
@@ -422,7 +427,7 @@ buscaSQL.prototype.cancelarSenha = function (id, local) {
     (
       ` UPDATE ${local} SET status = ? WHERE id = ? `,
       [
-        '0',
+        '2',
         id
       ],
       this._callback

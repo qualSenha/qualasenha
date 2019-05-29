@@ -7,7 +7,7 @@ import { ModuleLoader } from 'ionic-angular/umd/util/module-loader';
 export class ServidorProvider {
 
   //private url = "http://localhost:8880";
-  private url = "http://a97d0690.ngrok.io"
+  private url = "https://f0f69442.ngrok.io"
 
   constructor(public http: Http) {
     console.log('Hello ServidorProvider Provider');
