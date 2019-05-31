@@ -41,14 +41,18 @@
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Dia</ion-label>
-      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="data"></ion-datetime>
+      <ion-datetime displayFormat="DD/MM" min="2019-05-31" max="2019-12-31"[(ngModel)]="data"></ion-datetime>
     </ion-item>
   </ion-card-content>
 
   <ion-card-content style="text-align: left; font-size: 30px">
     <ion-item>
       <ion-label>Hora</ion-label>
-      <ion-datetime displayFormat="HH:mm" [(ngModel)]="hora"></ion-datetime>
+      <ion-datetime 
+      hourValues="9,10,11,12,13,16,17,18,19,20"
+      minuteValues="00,15,30,45 #min"
+      displayFormat="HH:mm" [(ngModel)]="hora"></ion-datetime>
+      
     </ion-item> 
   </ion-card-content>
 
